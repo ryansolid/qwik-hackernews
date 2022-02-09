@@ -1,1 +1,0 @@
-"use strict";var e=require("./core-91f16231.js");exports.Comment=r=>{const n=e.useStore({open:!0});return e.onRender(e.qrl((()=>Promise.resolve().then((function(){return require("./h_components_comment_onrender-7cd433d1.js")}))),"Comment_onRender",[r,n]))};
