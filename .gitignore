@@ -1,7 +1,6 @@
 node_modules/
 wrangler.toml
 .rollup.cache
-server/
 dist/
 public/build
 .DS_Store
