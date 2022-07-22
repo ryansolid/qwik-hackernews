@@ -10,7 +10,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "incremental": true
+    "incremental": true,
+    "types": ["vite/client", "@cloudflare/workers-types"]
   },
-  "include": ["src"]
+  "include": ["src", "functions"]
 }

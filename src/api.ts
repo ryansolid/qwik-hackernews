@@ -1,3 +1,5 @@
+import { noSerialize } from "@builder.io/qwik";
+
 const mapStories = {
   top: "news",
   new: "newest",
@@ -22,5 +24,5 @@ async function get(href: string) {
     headers: { "User-Agent": "chrome" },
   });
 
-  return res.json();
+  return res.json().then(data => JSON.parse(JSON.stringify(data), (k, v) => typeof v === "object" && v ? noSerialize(v): v));
 }
